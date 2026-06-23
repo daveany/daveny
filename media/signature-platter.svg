@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 700">
+  <rect width="1000" height="700" fill="#f0dccb"/>
+  <circle cx="780" cy="100" r="170" fill="#e9634f" opacity=".18"/>
+  <ellipse cx="500" cy="386" rx="390" ry="210" fill="#1b120d" opacity=".18"/>
+  <ellipse cx="500" cy="340" rx="390" ry="210" fill="#fffefa"/>
+  <ellipse cx="500" cy="340" rx="330" ry="160" fill="#f5eadb"/>
+  <g transform="translate(180 205)">
+    <g transform="translate(0 0)">
+      <rect width="132" height="72" rx="34" fill="#fffefa"/>
+      <path d="M0 34c43-31 91-33 132 0v14c-44 25-88 25-132 0z" fill="#e9634f"/>
+    </g>
+    <g transform="translate(165 22)">
+      <rect width="132" height="72" rx="34" fill="#fffefa"/>
+      <path d="M0 34c43-31 91-33 132 0v14c-44 25-88 25-132 0z" fill="#b9283e"/>
+    </g>
+    <g transform="translate(330 0)">
+      <rect width="132" height="72" rx="34" fill="#fffefa"/>
+      <path d="M0 34c43-31 91-33 132 0v14c-44 25-88 25-132 0z" fill="#f1a34f"/>
+    </g>
+    <g transform="translate(512 24)">
+      <rect width="132" height="72" rx="34" fill="#fffefa"/>
+      <path d="M0 34c43-31 91-33 132 0v14c-44 25-88 25-132 0z" fill="#89a847"/>
+    </g>
+    <g transform="translate(74 150)">
+      <circle cx="58" cy="58" r="58" fill="#12332b"/>
+      <circle cx="58" cy="58" r="37" fill="#fffefa"/>
+      <circle cx="58" cy="58" r="19" fill="#e9634f"/>
+    </g>
+    <g transform="translate(230 145)">
+      <circle cx="58" cy="58" r="58" fill="#12332b"/>
+      <circle cx="58" cy="58" r="37" fill="#fffefa"/>
+      <circle cx="58" cy="58" r="19" fill="#c99a43"/>
+    </g>
+    <g transform="translate(386 150)">
+      <circle cx="58" cy="58" r="58" fill="#12332b"/>
+      <circle cx="58" cy="58" r="37" fill="#fffefa"/>
+      <circle cx="58" cy="58" r="19" fill="#89a847"/>
+    </g>
+  </g>
+  <path d="M678 455c78-26 137-10 177 48-70 34-131 24-177-48z" fill="#89a847"/>
+</svg>
