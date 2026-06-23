@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="David Anyanwu — Computer Science Student, AI-Assisted Programming Enthusiast, Robotics Explorer">
+    <title>David Anyanwu — Portfolio</title>
+    <link rel="preload" href="style.css" as="style">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="page-wrap">
+        <canvas id="particles" aria-hidden="true"></canvas>
+        <div class="gradient-blobs" aria-hidden="true">
+            <div class="blob b1"></div>
+            <div class="blob b2"></div>
+            <div class="blob b3"></div>
+        </div>
+
+        <header class="navbar" id="navbar" role="navigation" aria-label="Main Navigation">
+            <div class="nav-inner container">
+                <a class="brand" href="#home">David Anyanwu</a>
+                <button id="themeToggle" class="theme-toggle" aria-pressed="false" aria-label="Toggle theme">🌗</button>
+                <nav class="nav-links" id="navLinks">
+                    <a href="#home" class="nav-item">Home</a>
+                    <a href="#skills" class="nav-item">Skills</a>
+                    <a href="#projects" class="nav-item">Projects</a>
+                    <a href="#testimonials" class="nav-item">Testimonials</a>
+                    <a href="#faq" class="nav-item">FAQ</a>
+                    <a href="#contact" class="nav-item">Contact</a>
+                </nav>
+                <button id="hamburger" class="hamburger" aria-expanded="false" aria-label="Open menu">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </header>
+
+        <main>
+            <section id="home" class="hero container" aria-labelledby="hero-heading">
+                <div class="hero-inner">
+                    <div class="hero-profile glass" aria-hidden="false">
+                        <div class="profile-frame">
+                            <img src="IMG_4012.jpg" loading="lazy" alt="David Anyanwu portrait" class="profile-img" id="profileImg">
+                        </div>
+                    </div>
+                    <div class="hero-content">
+                        <h1 id="hero-heading">Hi, I’m David Anyanwu</h1>
+                        <p class="subheadline">Computer Science Student & AI-Assisted Programming Enthusiast</p>
+                        <p class="lead">Passionate about software development, artificial intelligence, robotics, and creating innovative digital solutions.</p>
+                        <div class="hero-cta">
+                            <a href="#projects" class="btn primary magnetic">View Projects</a>
+                            <a href="#contact" class="btn outline magnetic">Contact Me</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="about" class="about container" aria-labelledby="about-heading">
+                <h2 id="about-heading">About</h2>
+                <div class="about-grid">
+                    <article class="glass about-card">
+                        <h3>Who I Am</h3>
+                        <p>I’m a Computer Science student based in Liverpool, UK. I explore AI-assisted programming, robotics, and systems that blend software with physical devices. I enjoy building reliable, scalable software and experimenting with intelligent systems.</p>
+                        <ul>
+                            <li>Passionate about AI-assisted programming and automation</li>
+                            <li>Experience with robotics and Micro:bit experiments</li>
+                            <li>Strong foundations in algorithms, data structures, and problem solving</li>
+                        </ul>
+                    </article>
+                    <div class="stats glass stats-grid" aria-hidden="false">
+                        <div class="stat" data-target="15">Projects<br><span class="stat-value">0+</span></div>
+                        <div class="stat" data-target="10">Technologies<br><span class="stat-value">0+</span></div>
+                        <div class="stat" data-target="500">Programming Hours<br><span class="stat-value">0+</span></div>
+                        <div class="stat" data-target="50">AI Experiments<br><span class="stat-value">0+</span></div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="skills" class="skills container" aria-labelledby="skills-heading">
+                <h2 id="skills-heading">Skills</h2>
+                <div class="skills-grid">
+                    <!-- skill cards -->
+                    <div class="skill glass" data-skill="Python">
+                        <h4>Python</h4>
+                        <div class="progress" data-value="90"><span></span></div>
+                    </div>
+                    <div class="skill glass" data-skill="HTML5">
+                        <h4>HTML5</h4>
+                        <div class="progress" data-value="95"><span></span></div>
+                    </div>
+                    <div class="skill glass" data-skill="CSS3">
+                        <h4>CSS3</h4>
+                        <div class="progress" data-value="92"><span></span></div>
+                    </div>
+                    <div class="skill glass" data-skill="JavaScript">
+                        <h4>JavaScript</h4>
+                        <div class="progress" data-value="88"><span></span></div>
+                    </div>
+                    <div class="skill glass" data-skill="AI-Assisted Development">
+                        <h4>AI-Assisted Development</h4>
+                        <div class="progress" data-value="80"><span></span></div>
+                    </div>
+                    <div class="skill glass" data-skill="Git & GitHub">
+                        <h4>Git & GitHub</h4>
+                        <div class="progress" data-value="90"><span></span></div>
+                    </div>
+                    <div class="skill glass" data-skill="Robotics">
+                        <h4>Robotics</h4>
+                        <div class="progress" data-value="75"><span></span></div>
+                    </div>
+                    <div class="skill glass" data-skill="Micro:bit">
+                        <h4>Micro:bit</h4>
+                        <div class="progress" data-value="70"><span></span></div>
+                    </div>
+                    <div class="skill glass" data-skill="Gaming">
+                        <h4>Gaming</h4>
+                        <div class="progress" data-value="65"><span></span></div>
+                    </div>
+                    <div class="skill glass" data-skill="Problem Solving">
+                        <h4>Problem Solving</h4>
+                        <div class="progress" data-value="95"><span></span></div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="projects" class="projects container" aria-labelledby="projects-heading">
+                <h2 id="projects-heading">Projects</h2>
+                <div class="projects-grid">
+                    <article class="project-card glass">
+                        <div class="project-thumb" aria-hidden="true"></div>
+                        <h3>Robotics Fleet Management</h3>
+                        <p>A concept system for managing and monitoring robotic fleets with automation and tracking features.</p>
+                        <div class="tags"><span>Robotics</span><span>IoT</span><span>Automation</span></div>
+                        <a class="btn small" href="#">View Details</a>
+                    </article>
+                    <article class="project-card glass">
+                        <div class="project-thumb" aria-hidden="true"></div>
+                        <h3>Micro:bit Smart Control Experiments</h3>
+                        <p>Interactive Micro:bit projects exploring automation, sensors, and smart control systems.</p>
+                        <div class="tags"><span>Micro:bit</span><span>Embedded</span></div>
+                        <a class="btn small" href="#">View Details</a>
+                    </article>
+                    <article class="project-card glass">
+                        <div class="project-thumb" aria-hidden="true"></div>
+                        <h3>AI-Assisted Programming Practice</h3>
+                        <p>Projects created using modern AI tools to accelerate development and learning.</p>
+                        <div class="tags"><span>AI</span><span>Tools</span></div>
+                        <a class="btn small" href="#">View Details</a>
+                    </article>
+                </div>
+            </section>
+
+            <section id="testimonials" class="testimonials container" aria-labelledby="testimonials-heading">
+                <h2 id="testimonials-heading">Testimonials</h2>
+                <div class="testimonials-slider" role="list">
+                    <blockquote class="testimonial glass" role="listitem">
+                        <p>David brings creativity and reliable engineering to every project. His AI-assisted workflows are impressive.</p>
+                        <cite>— Colleague, Software Team</cite>
+                    </blockquote>
+                    <blockquote class="testimonial glass" role="listitem">
+                        <p>Highly motivated, fast learner and a problem solver — excellent with robotics prototypes.</p>
+                        <cite>— Mentor</cite>
+                    </blockquote>
+                    <blockquote class="testimonial glass" role="listitem">
+                        <p>Clear communicator and thoughtful about design and UX for engineering tools.</p>
+                        <cite>— Project Lead</cite>
+                    </blockquote>
+                </div>
+            </section>
+
+            <section id="badges" class="badges container" aria-labelledby="badges-heading">
+                <h2 id="badges-heading">Trust & Badges</h2>
+                <div class="badges-row">
+                    <div class="badge glass">Computer Science</div>
+                    <div class="badge glass">AI Enthusiast</div>
+                    <div class="badge glass">Robotics Explorer</div>
+                    <div class="badge glass">Problem Solver</div>
+                    <div class="badge glass">Continuous Learner</div>
+                </div>
+            </section>
+
+            <section id="faq" class="faq container" aria-labelledby="faq-heading">
+                <h2 id="faq-heading">FAQ</h2>
+                <div class="accordion">
+                    <div class="accordion-item">
+                        <button class="accordion-btn" aria-expanded="false">What technologies do you work with?</button>
+                        <div class="accordion-panel">I work with Python, JavaScript, HTML5, CSS3, embedded systems like Micro:bit, and AI toolchains.</div>
+                    </div>
+                    <div class="accordion-item">
+                        <button class="accordion-btn" aria-expanded="false">What is AI-assisted programming?</button>
+                        <div class="accordion-panel">AI-assisted programming uses AI tools to accelerate development, suggest code, and help design solutions while keeping human oversight.</div>
+                    </div>
+                    <div class="accordion-item">
+                        <button class="accordion-btn" aria-expanded="false">What projects are you currently exploring?</button>
+                        <div class="accordion-panel">Robotics fleet simulations, Micro:bit smart control experiments, and AI-driven developer tooling experiments.</div>
+                    </div>
+                    <div class="accordion-item">
+                        <button class="accordion-btn" aria-expanded="false">How can I contact you?</button>
+                        <div class="accordion-panel">Use the contact section below or email me at danyanwu655@gmail.com.</div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="cta" class="cta container" aria-labelledby="cta-heading">
+                <div class="cta-inner glass">
+                    <h2 id="cta-heading">Let’s Build Something Amazing Together</h2>
+                    <a href="#contact" class="btn cta-btn">Get In Touch</a>
+                </div>
+            </section>
+
+            <section id="contact" class="contact container" aria-labelledby="contact-heading">
+                <h2 id="contact-heading">Contact</h2>
+                <div class="contact-grid">
+                    <div class="contact-card glass">
+                        <h3>Email</h3>
+                        <p id="contactEmail">danyanwu655@gmail.com</p>
+                        <div class="contact-actions">
+                            <button id="copyEmail" class="btn">Copy Email</button>
+                            <button id="motivateBtn" class="btn outline">Motivate Me</button>
+                        </div>
+                    </div>
+                    <div class="contact-card glass">
+                        <h3>Location</h3>
+                        <p>Liverpool, United Kingdom</p>
+                        <p>Open to remote and local opportunities</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="site-footer container" role="contentinfo">
+            <div class="footer-inner">
+                <div class="footer-left">© <span id="year"></span> David Anyanwu</div>
+                <div class="footer-right">
+                    <div class="socials">
+                        <a href="#" aria-label="LinkedIn placeholder">in</a>
+                        <a href="#" aria-label="GitHub placeholder">GH</a>
+                        <a href="#" aria-label="Twitter placeholder">tw</a>
+                    </div>
+                    <button id="backTop" class="back-top" aria-label="Back to top">↑</button>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+    <script src="script.js" defer></script>
+</body>
+</html>
